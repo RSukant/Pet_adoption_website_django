@@ -1,0 +1,357 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="AdoteAqui is a website aimed at promoting the adoption of pets who need a home to call their own.">
+    <meta name="keywords" content="adoption, for adoption, adopt, adoption about, pet adoption, adopt now, adopt here, dog, cat, pets, patinhas online, paws">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <title>Adopta — Pet World </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/190e245c5e.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="{% static 'master_app/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'master_app/styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'master_app/responsive.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <a class="logo" href="">
+            <span class="fas fa-paw"></span> Adopta
+          </a>
+
+          <input type="checkbox" id="check-menu">
+
+          <div class="burger-menu">
+            <label for="check-menu">
+              <svg class="burger" width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.375 14.875H44.625" stroke="#efef42" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M6.375 25.5H44.625" stroke="#efef42" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M6.37488 36.0625H28.0002" stroke="#efef42" stroke-width="3.5" stroke-linecap="round"/>
+              </svg>
+              <svg class="close" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 23L3 3" stroke="#f16d6d" stroke-width="5.5" stroke-linecap="round"/>
+                <path d="M3 23L23 3" stroke="#f16d6d" stroke-width="5.5" stroke-linecap="round"/>
+              </svg>
+            </label>
+          </div>
+  
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav__link nav__link--bgc-white" href="#adoption">Adoption</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="homepage" id="home">
+          <div class="homepage__content">
+            <h1 class="title">
+              Change <strong>lives</strong>
+            </h1>
+            <p class="homepage__text">
+                You won't change the world by adopting a dog, but you will change that dog's world.
+            </p>
+            <a class="btn" href="#adoption">Adopt</a>
+          </div>
+        </section>
+
+        <section class="adoption" id="adoption">
+          <h2 class="title title--medium">
+            <strong>Adoption</strong>
+          </h2>
+
+          <div class="adoption__cards">
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/fusca-dog1.png' %}" alt="Image of a cute dog named Fusca">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Fusca</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> July/2011 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>This is Fusca, a big guy full of energy, who gets very sad and seeks affection when he's in his little corner.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=57" target="_blank" rel="noopener external" title="Adopt Fusca">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/aramis-cat1.png' %}" alt="Image of a cute cat named Aramis">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Aramis</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> July/2013 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>Aramis is wary and keeps to himself. Who knows what he's been through? He needs a stable home to become a sociable and affectionate furry friend.</q>
+                  </p>
+                </article> 
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=273" target="_blank" rel="noopener external" title="Adopt Aramis">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/java-dog2.png' %}" alt="Image of a cute dog named Java">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Java</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> February/2014 <br>
+                    <strong>Gender:</strong> Female <br>
+
+                    <q>Timid and needy, that's our little Java's personality.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=216" target="_blank" rel="noopener external" title="Adopt Java">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/pascal-dog3.png' %}" alt="Image of a cute dog named Pascal">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Pascal</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> February/2014 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>He's not even an adult yet and has already suffered so much! Pascal is Java's little brother, and he's been with us since he was a puppy. He's always been shy and scared.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=249" target="_blank" rel="noopener external" title="Adopt Pascal">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/salvatore-dog4.png' %}" alt="Image of a cute dog named Salvatore">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Salvatore</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> April/2012 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>Salvatore is handsome and has a difficult past. It's not easy to deal with his suffering.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=325" target="_blank" rel="noopener external" title="Adopt Salvatore">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/caetano-dog5.png' %}" alt="Image of a cute dog named Brutus">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Brutus</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> June/2014 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>Big, strong, and very affectionate. Brutus just wants a home where he can run, play, and have someone to love him.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=272" target="_blank" rel="noopener external" title="Adopt Brutus">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/chico-dog6.png' %}" alt="Image of a cute dog named Leao">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Leao</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> December/2012 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>This is Leao, a very calm and loving dog. He loves to sleep and rest, and is waiting for a family that will give him all the care and attention he deserves.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=66" target="_blank" rel="noopener external" title="Adopt Leao">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/jorjao-dog7.png' %}" alt="Image of a cute dog named jorjan">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Jorjan</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> May/2006 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>This is Jorge, better known as Jorjan because of his respectable appearance and peculiar temperament. Jorjan is a sweetheart... with those close to him!</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=51" target="_blank" rel="noopener external" title="Adopt Jorjan">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/manguinho-dog8.png' %}" alt="Image of a cute dog named sleeve">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Sleeve</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> February/2016 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>Sleeve is a sweetheart! He arrived with a consolidated fracture in his paw, which doesn't stop him from doing anything! He really wants to go to a new home!</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=474" target="_blank" rel="noopener external" title="Adopt Sleeve">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/elliot-dog9.png' %}" alt="Image of a cute dog named Elliot">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Elliot</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> March/2011 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>A young man, with lots of energy and love to give. In this case, this is Elliot, he is extremely friendly and affectionate! Not to mention his charm, right?</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=82" target="_blank" rel="noopener external" title="Adopt Elliot">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/kinder-dog10.png' %}" alt="Image of a cute dog named Kinder">
+              
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Kinder</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> September/2012 <br>
+                    <strong>Gender:</strong> Male <br>
+
+                    <q>Friendly boy looking for a home and a family. This boy is very affectionate, active and playful.</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=371" target="_blank" rel="noopener external" title="Adopt Kinder">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+
+            <figure class="card">
+              <img class="card__img" src="{% static 'master_app/images/cido-dog11.png' %}" alt="Image of a cute dog named Cido">
+              <figcaption class="card__content">
+                <article class="card__pet-about">
+                  <h3 class="card__pet-name">Cido</h3>
+                  <p class="card__pet-info">
+                    <strong>Born:</strong> October/2008 <br>
+                    <strong>Gender:</strong> Male <br>
+                    <q>Cido's excited look really reflects what he is: a very active and needy dog who needs a home. He loves affection and is very sweet!</q>
+                  </p>
+                </article>
+                <a class="btn btn--small" href="https://www.patinhasonline.org.br/detalhes.php?id=59" target="_blank" rel="noopener external" title="Adopt Cido">
+                  Adopt
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="about">
+        <section class="footer__content">
+          <div class="footer__wrapper-content">
+            <article class="footer__about">
+              <h2 class="title title--small">About Us</h2>
+              <p class="footer__text">
+                Adopta is an online platform created to encourage pet adoption, especially those animals that are often overlooked due to their appearance or history. Our mission is to give these pets a second chance at a happy life.<a href="https://thepetnest.com/adopt-a-pet" target="_blank" rel="noopener external"><strong> PetNest</strong></a> a wonderfull pet adoption website by which we have been inspired. For further adoption of pets you can visit that website.
+              </p>
+            </article>
+
+            <div class="footer__links">
+              <a class="logo" href="">
+                <span class="fas fa-paw"></span> Adopta
+              </a>
+              
+              <ul class="footer__social-medias">
+                <li>
+                  <a href="https://instagram.com/patinhasonline" target="_blank" rel="noopener external">
+                    <span class="fab fa-instagram-square"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/patinhas_online" target="_blank" rel="noopener external">
+                    <span class="fab fa-twitter-square"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/patinhasonline" target="_blank" rel="noopener external">
+                    <span class="fab fa-facebook-square"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__copyright">
+            <p class="footer__text">
+              <a href="https://www.linkedin.com/in/william-rodrigues-dev/" targe="_blank" rel="noreferrer noopener exernal"><strong>Mini-Max Creations</strong></a> &copy; 2021 - All rights reserved. <br>
+              <span>Site developed for educational purposes.</span>
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
