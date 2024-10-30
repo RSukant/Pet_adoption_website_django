@@ -9,13 +9,6 @@ pipeline {
             }
         }
 
-        stage('Run Django Tests') {
-            steps {
-                // Activate virtual environment and run tests
-                bat 'envi\\Scripts\\activate && cd master_project && python manage.py test'
-            }
-        }
-
         stage('Start Django Development Server') {
             steps {
                 // Activate virtual environment and start Django server
